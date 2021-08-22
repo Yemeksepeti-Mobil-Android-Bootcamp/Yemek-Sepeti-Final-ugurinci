@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.218859649122807" />
+        <entry key="app/src/main/res/drawable/edittext.xml" value="0.218859649122807" />
+        <entry key="app/src/main/res/drawable/gradient.xml" value="0.218859649122807" />
+        <entry key="app/src/main/res/drawable/gradient2.xml" value="0.218859649122807" />
+        <entry key="app/src/main/res/drawable/gradient3.xml" value="0.218859649122807" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.218859649122807" />
+        <entry key="app/src/main/res/drawable/ic_outline_account2_circle_24.xml" value="0.218859649122807" />
+        <entry key="app/src/main/res/drawable/ic_outline_account3_circle_24.xml" value="0.218859649122807" />
+        <entry key="app/src/main/res/drawable/ic_outline_account_circle_24.xml" value="0.218859649122807" />
+        <entry key="app/src/main/res/drawable/ic_outline_account_circle_white_24.xml" value="0.218859649122807" />
+        <entry key="app/src/main/res/drawable/ic_outline_close_24.xml" value="0.218859649122807" />
+        <entry key="app/src/main/res/drawable/ic_outline_email_24.xml" value="0.218859649122807" />
+        <entry key="app/src/main/res/drawable/ic_outline_home_24.xml" value="0.218859649122807" />
+        <entry key="app/src/main/res/drawable/ic_outline_lock_24.xml" value="0.2179824561403509" />
+        <entry key="app/src/main/res/drawable/ic_outline_logout_24.xml" value="0.218859649122807" />
+        <entry key="app/src/main/res/drawable/ic_outline_phone_24.xml" value="0.218859649122807" />
+        <entry key="app/src/main/res/drawable/ic_outline_remove_shopping_cart_24.xml" value="0.218859649122807" />
+        <entry key="app/src/main/res/drawable/ic_outline_shopping_cart_24.xml" value="0.218859649122807" />
+        <entry key="app/src/main/res/drawable/radius.xml" value="0.218859649122807" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.20526315789473684" />
+        <entry key="app/src/main/res/layout/fragment_cart.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.2043859649122807" />
+        <entry key="app/src/main/res/layout/fragment_food_detail.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/fragment_food_list.xml" value="0.20526315789473684" />
+        <entry key="app/src/main/res/layout/fragment_hamburger.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.20526315789473684" />
+        <entry key="app/src/main/res/layout/fragment_on_boarding.xml" value="0.20526315789473684" />
+        <entry key="app/src/main/res/layout/fragment_onboarding.xml" value="0.20526315789473684" />
+        <entry key="app/src/main/res/layout/fragment_pizza.xml" value="0.13179347826086957" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.20526315789473684" />
+        <entry key="app/src/main/res/layout/fragment_register.xml" value="0.20526315789473684" />
+        <entry key="app/src/main/res/layout/fragment_restaurant_detail.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_restaurant_list.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/fragment_salad.xml" value="0.13179347826086957" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.20526315789473684" />
+        <entry key="app/src/main/res/layout/fragment_splash.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/fragment_third.xml" value="0.20526315789473684" />
+        <entry key="app/src/main/res/layout/single_cart.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/single_food.xml" value="0.20526315789473684" />
+        <entry key="app/src/main/res/layout/single_restaurant.xml" value="0.45" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

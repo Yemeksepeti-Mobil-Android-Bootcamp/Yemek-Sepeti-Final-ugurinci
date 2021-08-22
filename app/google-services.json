@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1014155606931",
+    "project_id": "yemek-sepeti-final",
+    "storage_bucket": "yemek-sepeti-final.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014155606931:android:135bc35630018f9e774666",
+        "android_client_info": {
+          "package_name": "com.ugurinci.yemeksepetifinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1014155606931-edtodq0gba4e0nr36hskpbtiv46i9cqu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEcjQ2xCRexBR6YmU71c5AwHqUW1Aq8po"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1014155606931-edtodq0gba4e0nr36hskpbtiv46i9cqu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
