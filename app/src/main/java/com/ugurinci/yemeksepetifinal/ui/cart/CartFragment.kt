@@ -38,6 +38,7 @@ class CartFragment : Fragment() {
                 Cart.foodList.remove(it)
                 cartRecyclerViewAdapter.notifyDataSetChanged()
                 updateUI()
+                Toast.makeText(context, "Food removed.", Toast.LENGTH_SHORT).show()
             }
             updateUI()
             buttonCartOrder.setOnClickListener {

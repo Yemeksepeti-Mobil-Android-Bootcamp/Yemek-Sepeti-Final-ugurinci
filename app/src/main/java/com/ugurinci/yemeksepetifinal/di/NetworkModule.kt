@@ -20,9 +20,8 @@ object NetworkModule {
     private val client = OkHttpClient().newBuilder().build()
 
     @Singleton
-    private val retrofit =
-        Retrofit.Builder().baseUrl(BASE_URL).client(client)
-            .addConverterFactory(GsonConverterFactory.create()).build()
+    private val retrofit = Retrofit.Builder().baseUrl(BASE_URL).client(client)
+        .addConverterFactory(GsonConverterFactory.create()).build()
 
     @Provides
     @Singleton
