@@ -10,6 +10,7 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
+import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.ugurinci.yemeksepetifinal.databinding.FragmentRestaurantDetailBinding
@@ -47,22 +48,30 @@ class RestaurantDetailFragment : Fragment() {
         binding.apply {
 
             viewModel.restaurant.observe(viewLifecycleOwner, {
-                textViewRestaurantDetailName.text = it.name
-                textViewRestaurantDetailPhone.text = it.phone
-                textViewRestaurantDetailAddress.text = it.address
-                Glide.with(root.context).load(it.image).into(imageViewRestaurantDetail)
+                if (it != null) {
+                    textViewRestaurantDetailName.text = it.name
+                    textViewRestaurantDetailPhone.text = it.phone
+                    textViewRestaurantDetailAddress.text = it.address
+                    Glide.with(root.context).load(it.image).into(imageViewRestaurantDetail)
+                } else {
+                    Snackbar.make(view, "mockAPI is unavailable", Snackbar.LENGTH_SHORT).show()
+                }
             })
 
             viewModel.foods.observe(viewLifecycleOwner, {
-                foodRecyclerViewAdapter = FoodRecyclerViewAdapter(it)
-                foodRecyclerViewAdapter.itemClickListener = { foodItem ->
-                    val action =
-                        RestaurantDetailFragmentDirections.actionRestaurantDetailFragmentToFoodDetailFragment(
-                            foodItem.id
-                        )
-                    findNavController().navigate(action)
+                if (it != null) {
+                    foodRecyclerViewAdapter = FoodRecyclerViewAdapter(it)
+                    foodRecyclerViewAdapter.itemClickListener = { foodItem ->
+                        val action =
+                            RestaurantDetailFragmentDirections.actionRestaurantDetailFragmentToFoodDetailFragment(
+                                foodItem.id
+                            )
+                        findNavController().navigate(action)
+                    }
+                    recyclerViewFood.adapter = foodRecyclerViewAdapter
+                } else {
+                    Snackbar.make(view, "mockAPI is unavailable", Snackbar.LENGTH_SHORT).show()
                 }
-                recyclerViewFood.adapter = foodRecyclerViewAdapter
             })
 
             buttonRestaurantDetail.setOnClickListener {

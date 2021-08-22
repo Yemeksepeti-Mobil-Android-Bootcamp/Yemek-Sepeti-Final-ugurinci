@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.ugurinci.yemeksepetifinal.databinding.FragmentRestaurantListBinding
@@ -46,6 +47,8 @@ class RestaurantListFragment : Fragment() {
                         findNavController().navigate(action)
                     }
                     recyclerViewRestaurant.adapter = restaurantRecyclerViewAdapter
+                } else {
+                    Snackbar.make(view, "mockAPI is unavailable", Snackbar.LENGTH_SHORT).show()
                 }
             })
 

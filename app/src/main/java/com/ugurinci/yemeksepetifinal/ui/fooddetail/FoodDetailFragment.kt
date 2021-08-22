@@ -10,6 +10,7 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
+import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.ugurinci.yemeksepetifinal.databinding.FragmentFoodDetailBinding
@@ -45,10 +46,14 @@ class FoodDetailFragment : Fragment() {
         binding.apply {
 
             viewModel.food.observe(viewLifecycleOwner, {
-                textViewFoodDetailName.text = it.name
-                textViewFoodDetailPrice.text = it.price.toString() + " TL"
-                textViewFoodDetailExplanation.text = it.explanation
-                Glide.with(root.context).load(it.image).into(imageViewFoodDetail)
+                if (it != null) {
+                    textViewFoodDetailName.text = it.name
+                    textViewFoodDetailPrice.text = it.price.toString() + " TL"
+                    textViewFoodDetailExplanation.text = it.explanation
+                    Glide.with(root.context).load(it.image).into(imageViewFoodDetail)
+                } else {
+                    Snackbar.make(view, "mockAPI is unavailable", Snackbar.LENGTH_SHORT).show()
+                }
             })
 
             buttonFoodDetailAddCart.setOnClickListener {
